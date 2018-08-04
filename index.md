@@ -17,7 +17,8 @@ If you have questions, you can reach us at `ccp@csail.mit.edu`.
 
 We have implemented several components in the CCP ecosystem:
 
-1. [*Portus*](https://github.com/ccp-project/portus) is a user-space CCP agent. It provides a runtime and API for developers to implement congestion control algorithms.
+1. [*Portus*](https://github.com/ccp-project/portus) is a user-space CCP agent. It provides a runtime and API for developers to implement congestion control algorithms. 
+It is published with documentation [on crates.io](https://crates.io/crates/portus).
 2. [`libccp`](https://github.com/ccp-project/libccp) is a convenience library which, given an IPC mechanism and the definitions of various congestion control primitives in the context of a datapath, can communicate with `Portus` to run a congestion control algorithm.
 3. ['ccp-kernel`](https://github.com/ccp-project/ccp-kernel) implements a Linux kernel TCP datapath using the pluggable TCP API.
 4. [`ccp-mtcp`](https://github.com/ccp-project/ccp-mtcp) is a fork of mTCP, a TCP stack on top of DPDK, which implements CCP support.
