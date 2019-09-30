@@ -10,7 +10,7 @@ It provides three benefits:
 2. *Write-Once, Run-Anywhere*. Recently, [new](https://www.chromium.org/quic) [datapaths](http://shader.kaist.edu/mtcp/) have emerged, leading to the "matrix of sadness," where congestion control algorithm developers must re-implement their algorithms anew on each datapath. CCP provides a runtime for algorithms which interfaces with each datapath, so the same algorithm code runs in multiple datapaths without modification.
 3. *New Capabilities*. It is difficult to implement new congestion control capabilities such as the [congestion manager](http://www.nms.lcs.mit.edu/cm/) in current datapaths. CCP allows developers to add these capabilities without datapath modification.
 
-To get started using CCP, please see [our guide](./guide). It provides detailed setup instructions
+To get started using CCP, please see [our guide](https://ccp-project.github.io/ccp-guide/). It provides detailed setup instructions
 for running existing algorithms on CCP and a tutorial for writing new algorithms.
 
 To learn more, please refer to [our SIGCOMM 2018 paper](https://akshayn.xyz/res/ccp-sigcomm18.pdf).
