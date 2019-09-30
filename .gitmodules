@@ -1,0 +1,3 @@
+[submodule "guide/src/source"]
+	path = guide/src/source
+	url = https://github.com/ccp-project/portus
