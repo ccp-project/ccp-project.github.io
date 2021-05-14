@@ -24,10 +24,14 @@ We have implemented several components in the CCP ecosystem:
 1. [*Portus*](https://github.com/ccp-project/portus) is a user-space CCP agent. It provides a runtime and API for developers to implement congestion control algorithms. 
 It is published with documentation [on crates.io](https://crates.io/crates/portus).
 2. [`libccp`](https://github.com/ccp-project/libccp) is a convenience library which, given an IPC mechanism and the definitions of various congestion control primitives in the context of a datapath, can communicate with `Portus` to run a congestion control algorithm.
-3. ['ccp-kernel`](https://github.com/ccp-project/ccp-kernel) implements a Linux kernel TCP datapath using the pluggable TCP API.
+3. ['ccp-kernel`](https://github.com/ccp-project/ccp-kernel) implements a Linux kernel TCP datapath using the pluggable TCP API. We have also [`explored`](https://github.com/aditiharini/ccp-kernel/tree/ebpf) an ebpf-powered Linux datapath.
 4. [`ccp-mtcp`](https://github.com/ccp-project/ccp-mtcp) is a fork of mTCP, a TCP stack on top of DPDK, which implements CCP support.
 5. [`ccp-quic`](https://github.com/ccp-project/ccp-quic) hosts a patch to QUIC which implements CCP support.
-6. Finally, we have implemented or are aware of various congestion control algorithm implementations ([bbr](https://github.com/ccp-project/bbr), [copa](https://github.com/venkatarun95/ccp_copa), [nimbus](https://github.com/ccp-project/nimbus) and more). If you have implemented a congestion control algorithm using CCP, or are considering doing so, please get in touch with us!
+6. [`ccp-mvfst`](https://github.com/facebookincubator/mvfst/blob/master/quic/congestion_control/QuicCCP.h): Facebook's production QUIC datapath, mvfst, includes support for CCP algorithms.
+
+We also have spoken with other datapath authors who are interested or in the process of implementing CCP datapaths as an easy way to support congestion control.
+
+Finally, we have implemented or are aware of various congestion control algorithm implementations ([bbr](https://github.com/ccp-project/bbr), [copa](https://github.com/venkatarun95/ccp_copa), [nimbus](https://github.com/ccp-project/nimbus), Verus, [BIC-DCTCP](https://github.com/shivariyer/ccp_bicdctcp) and more). If you have implemented a congestion control algorithm using CCP, or are considering doing so, please get in touch with us!
 
 ### Fidelity
 
